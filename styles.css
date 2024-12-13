@@ -1,0 +1,174 @@
+/* Основные стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  header {
+    background-color: #1c2b48;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .section {
+    padding: 100px 20px;
+    min-height: 100vh;
+  }
+  .intro {
+    background: linear-gradient(to bottom, #1c2b48, #e8e6e4);
+    color: #fff;
+    text-align: center;
+  }
+  .models {
+    background-color: #f9f9f9;
+  }
+  .models .camera-model {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .models .camera-model img {
+    max-width: 150px;
+    margin-right: 20px;
+  }
+ /* Стили для секции "Где используются наши камеры" */
+ .applications {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+  }
+  .applications h2 {
+    text-align: center;
+    color: #1c2b48;
+    margin-bottom: 40px;
+  }
+  .applications ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  .applications li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+  }
+  .applications li img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .applications li p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c2b48;
+    color: #fff;
+  }
+/* Стили для всплывающего окна */
+.contact-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  .contact-popup.active {
+    display: block;
+  }
+  .contact-popup h3 {
+    text-align: center;
+    color: #1c2b48;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .contact-popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact-popup label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  .contact-popup input,
+  .contact-popup textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .contact-popup input:focus,
+  .contact-popup textarea:focus {
+    border-color: #1c2b48;
+    box-shadow: 0 0 5px rgba(28, 43, 72, 0.5);
+  }
+  .contact-popup textarea {
+    resize: none;
+    height: 100px;
+  }
+  .contact-popup button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1c2b48;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .contact-popup button:hover {
+    background-color: #163243;
+  }
+  
+  /* Стили для кнопки закрытия */
+  .contact-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+  }
+  .contact-popup .close-btn:hover {
+    color: #1c2b48;
+  }
+  
